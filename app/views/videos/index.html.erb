@@ -3,3 +3,24 @@
     <%= text_field_tag(:url) %>
     <%= submit_tag("Run Thumbnailer") %>
 <% end %>
+
+Some samples:
+<%
+   urls = [
+   "http://hubblesource.stsci.edu/sources/video/clips/details/images/centaur_1.mpg",
+   "http://hubblesource.stsci.edu/sources/video/clips/details/images/grb_1.mpg",
+   "http://hubblesource.stsci.edu/sources/video/clips/details/images/hst_1.mpg",
+   "http://hubblesource.stsci.edu/sources/video/clips/details/images/m84_1.mpg",
+   "http://hubblesource.stsci.edu/sources/video/clips/details/images/ngc4261_1.mpg",
+   "http://hubblesource.stsci.edu/sources/video/clips/details/images/orion_1.mpg",
+   "http://hubblesource.stsci.edu/sources/video/clips/details/images/comet_jupiter_1.mpg",
+   "http://hubblesource.stsci.edu/sources/video/clips/details/images/stellar_disk_1.mpg"
+   ]
+%>
+<ul>
+  <% urls.each do |url| %>
+  <li>
+    <%= link_to(url, thumbnail_path(:url => url)) %>
+  </li>
+  <% end %>
+</ul>
