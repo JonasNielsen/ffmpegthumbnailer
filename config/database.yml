@@ -8,7 +8,7 @@ development:
   database: plateddev
   pool: 5
   timeout: 5000
-  username: plated
+  username: postgres
   password: iwantsml
 
   #database: db/development.sqlite3

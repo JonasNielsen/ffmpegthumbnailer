@@ -1,0 +1,5 @@
+<%= form_tag("/thumbnail", :method => "get") do %>
+    <%= label_tag(:url, "Video URL:") %>
+    <%= text_field_tag(:url) %>
+    <%= submit_tag("Run Thumbnailer") %>
+<% end %>
