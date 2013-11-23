@@ -1,0 +1,4 @@
+ffmpegthumbnailer
+=================
+
+ffmpegthumbnailer on Heroku
